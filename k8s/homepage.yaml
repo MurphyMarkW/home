@@ -123,9 +123,15 @@ data:
         cpu: true
         memory: true
         network: default
-    - search:
-        provider: duckduckgo
-        target: _blank
+    - openmeteo:
+        label: Chicago
+        latitude: 41.8865158
+        longitude: 87.6770979
+        timezone: America/Chicago
+        units: imperial
+        cache: 10
+        format:
+          maximumFractionDigits: 1
   docker.yaml: ""
 ---
 apiVersion: rbac.authorization.k8s.io/v1
