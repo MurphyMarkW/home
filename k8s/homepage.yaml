@@ -57,18 +57,18 @@ data:
         - mVIDIA:
             href: http://mvidia/
             description: Machine learning stuff!
-        - Jellyfin:
-            href: http://jellyfin/
-            description: Media Server
-            widgets:
-              - type: jellyfin
-                url: http://jellyfin/
-                key: TODO
-                enableBlocks: true
-                enableNowPlaying: true
-                enableUser: true
-                showEpisodeNumber: true
-                expandOneStreamToTwoRows: false
+        #- Jellyfin:
+        #    href: http://jellyfin/
+        #    description: Media Server
+        #    widgets:
+        #      - type: jellyfin
+        #        url: http://jellyfin/
+        #        key: TODO
+        #        enableBlocks: true
+        #        enableNowPlaying: true
+        #        enableUser: true
+        #        showEpisodeNumber: true
+        #        expandOneStreamToTwoRows: false
 
     - Hardware:
         - markBox:
