@@ -48,6 +48,12 @@ data:
               href: https://tailscale.com/admin/
   services.yaml: |
     - Services:
+        - Network (Unifi Direct):
+            href: https://192.168.0.1/
+            description: Home Unifi network management (direct connect)
+        - Network (Unifi Cloud):
+            href: https://unifi.ui.com/
+            description: Home Unifi network management (cloud connect)
         - Nextflow:
             href: http://nextflow/
             description: Bioinformations Workflows
@@ -105,18 +111,18 @@ data:
     #      - TSM
     #      - SOXX
     #      - BTCUSD
-    - kubernetes:
-        cluster:
-          show: true
-          cpu: true
-          memory: true
-          showLabel: true
-          label: "cluster"
-        nodes:
-          show: true
-          cpu: true
-          memory: true
-          showLabel: true
+    #- kubernetes:
+    #    cluster:
+    #      show: true
+    #      cpu: true
+    #      memory: true
+    #      showLabel: true
+    #      label: "cluster"
+    #    nodes:
+    #      show: true
+    #      cpu: true
+    #      memory: true
+    #      showLabel: true
     - resources:
         backend: resources
         expanded: true
@@ -132,6 +138,10 @@ data:
         cache: 10
         format:
           maximumFractionDigits: 1
+    - unifi_console:
+        url: https://192.168.0.1
+        username: homepage
+        password: changeme
   docker.yaml: ""
 ---
 apiVersion: rbac.authorization.k8s.io/v1
